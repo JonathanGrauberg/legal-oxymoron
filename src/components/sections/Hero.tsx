@@ -1,31 +1,21 @@
 import { useRef } from "react";
-import Gear from "../Gear";
-import MazePattern from "../MazePattern";
-import { mazeSquare } from "../../assets/mazePaths";
-import { useGearScroll } from "../../hooks/useGearScroll";
-import { useMazeReveal } from "../../hooks/useMazeReveal";
+import heroMaze from "../../assets/hero-maze.png";
 import { useReveal } from "../../hooks/useReveal";
 
 export default function Hero() {
-  const gearRef = useRef<SVGSVGElement>(null);
-  const gearSmallRef = useRef<SVGSVGElement>(null);
-  const mazePathRef = useRef<SVGPathElement>(null);
-  const mazeWrapRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
 
-  useGearScroll(gearRef, { degreesPerPage: 220, direction: 1 });
-  useGearScroll(gearSmallRef, { degreesPerPage: 220, direction: -1 });
-  useMazeReveal(mazePathRef, mazeWrapRef, { start: "top 100%", end: "top 20%" });
   useReveal(sectionRef, "[data-reveal]", { y: 24, stagger: 0.1, start: "top 95%" });
 
   return (
     <section ref={sectionRef} id="top" className="relative pt-40 pb-28 md:pt-48 md:pb-36 overflow-hidden">
-      {/* Corner labyrinth, echoes the brand manual's diagonal maze motif */}
-      <div
-        ref={mazeWrapRef}
-        className="pointer-events-none absolute -top-6 -right-16 w-[280px] h-[280px] md:w-[440px] md:h-[440px] opacity-[0.9]"
-      >
-        <MazePattern ref={mazePathRef} data={mazeSquare} color="var(--color-ink)" strokeWidth={11} className="w-full h-full" />
+      {/* Laberinto de fondo, imagen provista por el diseñador */}
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-[60%] sm:w-[52%] md:w-[46%] lg:w-[42%]">
+        <img
+          src={heroMaze}
+          alt=""
+          className="absolute bottom-0 right-0 h-full w-auto max-w-none object-contain opacity-90"
+        />
       </div>
 
       <div className="container-px relative">
@@ -60,14 +50,6 @@ export default function Hero() {
             Ver servicios
           </a>
         </div>
-      </div>
-
-      {/* Large idle+scroll driven gear, the mechanical heart of the hero */}
-      <div className="pointer-events-none absolute right-[-50px] bottom-[-70px] sm:right-[-10px] sm:bottom-[-50px] md:right-6 md:bottom-[-90px] w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] md:w-[380px] md:h-[380px] lg:w-[440px] lg:h-[440px] opacity-[0.94]">
-        <Gear ref={gearRef} color="var(--color-ink)" className="w-full h-full" />
-      </div>
-      <div className="pointer-events-none absolute right-[160px] bottom-[60px] hidden lg:block w-[130px] h-[130px] opacity-[0.5]">
-        <Gear ref={gearSmallRef} color="var(--color-ink)" className="w-full h-full" />
       </div>
     </section>
   );
