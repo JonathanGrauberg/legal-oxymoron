@@ -8,7 +8,7 @@ export default function Stats() {
 
   return (
     <div className="bg-ink text-paper">
-      <div ref={ref} className="container-px grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-6 py-24 md:py-32">
+      <div ref={ref} className="container-px grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-6 py-16 md:py-20">
         {stats.map((s) => (
           <div key={s.label} data-reveal>
             <div className="font-display text-4xl md:text-5xl font-semibold num-tabular text-paper">{s.value}</div>
