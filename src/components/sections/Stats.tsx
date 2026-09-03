@@ -7,12 +7,12 @@ export default function Stats() {
   useReveal(ref, "[data-reveal]", { y: 18, stagger: 0.08 });
 
   return (
-    <div className="border-y border-line bg-paper">
-      <div ref={ref} className="container-px grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6 py-12 md:py-14">
+    <div className="bg-ink text-paper">
+      <div ref={ref} className="container-px grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-6 py-24 md:py-32">
         {stats.map((s) => (
           <div key={s.label} data-reveal>
-            <div className="font-display text-4xl md:text-5xl font-semibold num-tabular">{s.value}</div>
-            <div className="mt-1.5 text-[0.8rem] text-mute leading-snug">{s.label}</div>
+            <div className="font-display text-4xl md:text-5xl font-semibold num-tabular text-paper">{s.value}</div>
+            <div className="mt-1.5 text-[0.8rem] text-paper/60 leading-snug">{s.label}</div>
           </div>
         ))}
       </div>
