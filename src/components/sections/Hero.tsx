@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="container-px relative">
         <div data-reveal className="eyebrow mb-7 flex items-center gap-3">
           <span className="w-8 h-px bg-ink/40" />
-          Estudio Jurídico Integral · Buenos Aires
+          Derecho Internacional e Intangibles · Buenos Aires
         </div>
 
         <h1
@@ -36,9 +36,9 @@ export default function Hero() {
         </h1>
 
         <p data-reveal className="mt-8 max-w-xl text-[1.05rem] leading-relaxed text-mute">
-          Más de 25 años anticipándonos a los conflictos. Asesoramiento legal
-          preventivo para empresas, trabajadores y familias que prefieren
-          pensar antes de que todo se complique.
+          Estudio boutique especializado en derecho internacional y en la
+          protección, valuación y explotación de activos intangibles.
+          Asesoramos a empresas que operan o proyectan operar en el exterior.
         </p>
 
         <div data-reveal className="mt-11 flex flex-wrap items-center gap-4">

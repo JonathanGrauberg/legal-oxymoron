@@ -9,8 +9,9 @@ export default function Footer() {
         <div>
           <Logo size={17} color="var(--color-paper)" />
           <p className="mt-5 text-sm text-paper/50 max-w-xs leading-relaxed">
-            Estudio jurídico integral. Asesoramiento legal preventivo para
-            empresas, trabajadores y familias en Buenos Aires.
+            Estudio boutique de derecho internacional e intangibles.
+            Asesoramiento legal preventivo para empresas con operaciones en
+            el exterior.
           </p>
         </div>
 

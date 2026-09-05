@@ -20,12 +20,12 @@ export default function Team() {
           </p>
         </div>
 
-        <div ref={ref} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div ref={ref} className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {team.map((member) => (
             <div
               key={member.name}
               data-reveal
-              className="group border border-line p-7 rounded-2xl hover:border-ink transition-colors duration-400 bg-paper"
+              className="group border border-line p-8 rounded-2xl hover:border-ink transition-colors duration-400 bg-paper"
             >
               <div className="w-12 h-12 rounded-full bg-ink text-paper flex items-center justify-center text-[0.72rem] font-semibold tracking-wide">
                 {member.initials}
@@ -45,6 +45,17 @@ export default function Team() {
                   </span>
                 ))}
               </div>
+              {member.linkedin && (
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center gap-1.5 text-xs font-semibold text-mute-2 hover:text-ink transition-colors"
+                >
+                  LinkedIn
+                  <span aria-hidden>→</span>
+                </a>
+              )}
             </div>
           ))}
         </div>

@@ -1,117 +1,91 @@
 export const stats = [
   { value: "25+", label: "Años de trayectoria" },
   { value: "500+", label: "Casos resueltos" },
-  { value: "8", label: "Profesionales" },
-  { value: "12", label: "Áreas de práctica" },
+  { value: "2", label: "Profesionales" },
+  { value: "10", label: "Áreas de práctica" },
 ];
 
 export const practiceAreas = [
   {
-    title: "Derecho Laboral",
+    title: "Planificación tributaria internacional",
     description:
-      "Asesoramiento preventivo, contratación, conflictos, despidos, reestructuraciones, auditorías y seguridad social. Representación de empresas y trabajadores.",
-    tags: ["Empresas", "Trabajadores", "Mediación"],
+      "Estructuración fiscal de operaciones transfronterizas, tratados de doble imposición, precios de transferencia en coordinación con asesores impositivos, y planificación para empresas con filiales, licenciantes o clientes en el exterior.",
+    tags: ["Fiscal internacional", "Transfronterizo"],
   },
   {
-    title: "Civil & Comercial",
+    title: "Derecho laboral internacional",
     description:
-      "Contratos, obligaciones, daños, sociedades, M&A, flujos de crédito y competitividad.",
-    tags: ["Contratos", "Sociedades"],
+      "Contratos y relaciones laborales con elementos extranjeros, destacaciones y expatriados, contratación remota transfronteriza y coordinación con filiales del exterior.",
+    tags: ["Expatriados", "Filiales"],
   },
   {
-    title: "Derecho Empresarial",
+    title: "Contratos internacionales",
     description:
-      "Sistemas societarios, compliance, contratos comerciales, mediación y resolución de conflictos.",
-    tags: ["Compliance", "Conflictos"],
+      "Negociación y redacción de contratos de compraventa, distribución, agencia, licencia y prestación de servicios internacionales; ley aplicable, jurisdicción y arbitraje.",
+    tags: ["Contratos", "Arbitraje"],
   },
   {
-    title: "Amparos de Salud",
+    title: "Propiedad intelectual e industrial",
     description:
-      "Mediación de conflictos con obras sociales y prepagas. Cobertura de medicamentos, tratamientos y régimen de alto costo.",
-    tags: ["Amparos", "Prepagas"],
+      "Marcas, patentes, derechos de autor, secretos empresariales y defensa frente a infracciones.",
+    tags: ["Marcas", "Patentes"],
   },
   {
-    title: "Jubilaciones",
+    title: "Transferencia de tecnología y licenciamiento",
     description:
-      "Trámite ante ANSES, reajuste de haberes, pensiones, moratoria y regímenes especiales.",
-    tags: ["ANSES", "Reajustes"],
+      "Acuerdos de licencia, franquicias tecnológicas y transferencia de know-how.",
+    tags: ["Licencias", "Know-how"],
   },
   {
-    title: "Derecho Penal",
+    title: "Valuación y gestión de intangibles",
     description:
-      "Defensa especializada en todas las etapas del proceso. Delitos viales, económicos, violencia de género y más.",
-    tags: ["Defensa", "Proceso penal"],
+      "Identificación, valuación y estrategia de activos intangibles como ventaja competitiva.",
+    tags: ["Intangibles", "Estrategia"],
   },
   {
-    title: "Derecho de Familia",
+    title: "Inversiones extranjeras",
     description:
-      "Divorcio, cuidado personal, alimentos, sucesiones, adopción, violencia familiar y mediación.",
-    tags: ["Familia", "Sucesiones"],
+      "Protección de inversiones y conflictos de jurisdicción.",
+    tags: ["Inversiones", "Jurisdicción"],
   },
   {
-    title: "Inmobiliario",
+    title: "Derecho internacional privado",
     description:
-      "Compraventas, alquileres, desarrollos inmobiliarios, propiedad horizontal y regularización.",
-    tags: ["Alquileres", "Desarrollos"],
+      "Ley aplicable, competencia judicial internacional y reconocimiento de decisiones extranjeras.",
+    tags: ["Ley aplicable", "Competencia"],
   },
   {
-    title: "Daños y Perjuicios",
+    title: "Derecho farmacéutico y ciencias de la vida",
     description:
-      "Incidentes de tránsito, laborales, mala praxis y productos defectuosos. Tasación integral de la indemnización.",
-    tags: ["Indemnización", "Mala praxis"],
+      "Regulatorio, comercialización y contratos del sector farmacéutico y de ciencias de la vida.",
+    tags: ["Regulatorio", "Farmacéutico"],
   },
   {
-    title: "Propiedad Intelectual",
+    title: "Derecho corporativo y empresas familiares",
     description:
-      "Registro de marcas y patentes, asesoría contractual, licenciamiento y protección de activos intangibles.",
-    tags: ["Marcas", "Licencias"],
+      "Gobierno corporativo, protocolos familiares y procesos de sucesión.",
+    tags: ["Gobierno corporativo", "Sucesión"],
   },
 ];
 
 export const team = [
   {
     initials: "SV",
-    name: "Dr. Santiago Villa",
-    role: "Socio Principal",
-    tags: ["Laboral", "Empresarial"],
-  },
-  {
-    initials: "MV",
-    name: "Dr. Maximiliano Villa",
+    name: "Santiago Miguel Villa",
     role: "Socio Fundador",
-    tags: ["UBA", "Laboral"],
+    description:
+      "Doctorando en Ciencias Jurídicas y Sociales (UCA), con posgrados en propiedad intelectual y valuación de intangibles en Franklin Pierce Law School / UNH y UC Davis (EE. UU.). Profesor de Derecho Internacional Privado y Derecho Industrial en la UCA, donde coordina el Posgrado de Gestión de Intangibles.",
+    tags: ["Propiedad Intelectual", "Intangibles", "Internacional"],
+    linkedin: "https://www.linkedin.com/in/santiago-miguel-villa-16635bb",
   },
   {
-    initials: "GP",
-    name: "Dr. Gustavo Parga",
-    role: "Socio",
+    initials: "PL",
+    name: "Pablo Tomás Lamas",
+    role: "Cofundador",
     description:
-      "Experiencia integral en derecho laboral, civil y comercial. Maneja con solvencia casos que interrelacionan distintas ramas jurídicas.",
-    tags: ["Laboral", "Civil", "Comercial"],
-  },
-  {
-    initials: "MR",
-    name: "Dra. María Vargas",
-    role: "Abogada",
-    description:
-      "Más de 20 años de experiencia exclusiva en derecho laboral. Representación tanto de trabajadores como de empleadores.",
-    tags: ["Laboral"],
-  },
-  {
-    initials: "JC",
-    name: "Dra. Juliana Chiesa",
-    role: "Abogada",
-    description:
-      "Enfocada en derecho colectivo de trabajo y seguridad social. Asesoría estratégica y negociación colectiva.",
-    tags: ["Colectivo", "Seguridad Social"],
-  },
-  {
-    initials: "SM",
-    name: "Dr. Santiago Moscardini",
-    role: "Consultor Externo",
-    description:
-      "Especializado en recuperación empresaria. Conocimiento integral en derecho inmobiliario, mercantil, civil y ejercicio deportivo.",
-    tags: ["Inmobiliario", "Mercantil", "Deportivo"],
+      "Abogado (UCA, 2003) y Magíster en Propiedad Intelectual (Universidad Austral, 2012), con diploma de honor. Diez años de trayectoria en la industria farmacéutica y docencia universitaria en Argentina, Colombia, Ecuador, Perú y Bolivia. Autor del libro \"El Hilo de Oro\", sobre empresas familiares.",
+    tags: ["Propiedad Intelectual", "Farmacéutico", "Empresas Familiares"],
+    linkedin: "https://www.linkedin.com/in/pablo-lamas-7b660916",
   },
 ];
 
@@ -143,7 +117,7 @@ export const methodology = [
 ];
 
 export const contactInfo = {
-  address: "Av. Pueyrredón 783, Palermo, Buenos Aires, Argentina",
+  address: "25 de Junio 229, Buenos Aires, Argentina",
   phone: "+54 11 5237 7192",
   email: "info@oxymoron.com.ar",
   hours: "Lunes a viernes, 9:00 – 17:00hs. Entrevistas virtuales disponibles.",

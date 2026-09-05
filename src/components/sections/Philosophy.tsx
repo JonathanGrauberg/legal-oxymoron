@@ -1,29 +1,24 @@
 import { useRef } from "react";
-import MazePattern from "../MazePattern";
-import { mazeWide } from "../../assets/mazePaths";
-import { useMazeReveal } from "../../hooks/useMazeReveal";
+import { useParallax } from "../../hooks/useParallax";
 import { useReveal } from "../../hooks/useReveal";
-import Gear from "../Gear";
-import { useGearScroll } from "../../hooks/useGearScroll";
 
 export default function Philosophy() {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const mazePathRef = useRef<SVGPathElement>(null);
-  const mazeWrapRef = useRef<HTMLDivElement>(null);
-  const gearRef = useRef<SVGSVGElement>(null);
+  const bgRef = useRef<HTMLImageElement>(null);
 
   useReveal(sectionRef, "[data-reveal]", { y: 24, stagger: 0.08 });
-  useMazeReveal(mazePathRef, mazeWrapRef, { start: "top 90%", end: "bottom 50%" });
-  useGearScroll(gearRef, { degreesPerPage: -160 });
+  useParallax(bgRef, { distance: 30 });
 
   return (
-    <section id="filosofia" className="relative bg-ink text-paper py-28 md:py-36 overflow-hidden">
-      <div ref={mazeWrapRef} className="pointer-events-none absolute inset-x-0 -bottom-10 opacity-[0.16]">
-        <MazePattern ref={mazePathRef} data={mazeWide} color="var(--color-paper)" strokeWidth={7} className="w-full" />
-      </div>
-
-      <div className="pointer-events-none absolute -left-16 top-10 opacity-[0.08] w-[280px] h-[280px] md:w-[380px] md:h-[380px]">
-        <Gear ref={gearRef} color="var(--color-paper)" className="w-full h-full" />
+    <section id="filosofia" className="relative bg-ink text-paper py-28 md:py-36">
+      <div className="absolute inset-0 overflow-hidden">
+        <img
+          ref={bgRef}
+          src="/fondo-parallax-filosofia.jpeg"
+          alt=""
+          className="pointer-events-none absolute inset-x-0 -top-[25%] h-[150%] w-full object-cover"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-ink/75" />
       </div>
 
       <div ref={sectionRef} className="container-px relative grid lg:grid-cols-[1.1fr_0.9fr] gap-16">
@@ -77,8 +72,8 @@ export default function Philosophy() {
                 SV
               </div>
               <div className="text-sm">
-                <div className="font-semibold">Dr. Santiago Villa</div>
-                <div className="text-paper/50 text-xs">Socio Principal</div>
+                <div className="font-semibold">Santiago Miguel Villa</div>
+                <div className="text-paper/50 text-xs">Socio Fundador</div>
               </div>
             </div>
             <div className="mt-7 pt-6 border-t border-paper/10 flex items-center gap-2 text-xs text-paper/60">
@@ -88,6 +83,12 @@ export default function Philosophy() {
           </div>
         </div>
       </div>
+
+      <img
+        src="/contorno-humano.png"
+        alt=""
+        className="pointer-events-none select-none absolute right-8 sm:right-16 md:right-24 top-full -translate-y-[79.9%] w-40 sm:w-52 md:w-64 z-10"
+      />
     </section>
   );
 }
