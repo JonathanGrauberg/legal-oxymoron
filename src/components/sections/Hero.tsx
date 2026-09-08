@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import heroMaze from "../../assets/hero-maze.png";
+import heroMazePhone from "../../assets/hero-maze-phone.png";
 import { useReveal } from "../../hooks/useReveal";
 
 export default function Hero() {
@@ -12,9 +13,14 @@ export default function Hero() {
       {/* Laberinto de fondo, imagen provista por el diseñador */}
       <div className="pointer-events-none absolute inset-y-0 right-0 w-[60%] sm:w-[52%] md:w-[46%] lg:w-[42%]">
         <img
+          src={heroMazePhone}
+          alt=""
+          className="sm:hidden absolute bottom-0 right-0 h-full w-auto max-w-none object-contain opacity-90"
+        />
+        <img
           src={heroMaze}
           alt=""
-          className="absolute bottom-0 right-0 h-full w-auto max-w-none object-contain opacity-90"
+          className="hidden sm:block absolute bottom-0 right-0 h-full w-auto max-w-none object-contain opacity-90"
         />
       </div>
 

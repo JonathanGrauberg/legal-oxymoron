@@ -9,8 +9,30 @@ export default function Contact() {
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: conectar a un endpoint real (Formspree / API propia).
-    // Por ahora solo confirmamos en la UI.
+    const data = new FormData(e.currentTarget);
+    const firstName = data.get("firstName")?.toString().trim() ?? "";
+    const lastName = data.get("lastName")?.toString().trim() ?? "";
+    const email = data.get("email")?.toString().trim() ?? "";
+    const phone = data.get("phone")?.toString().trim() || "-";
+    const area = data.get("area")?.toString().trim() || "-";
+    const message = data.get("message")?.toString().trim() || "-";
+
+    const text = [
+      "Nueva consulta desde el sitio web:",
+      "",
+      `Nombre: ${firstName}`,
+      `Apellido: ${lastName}`,
+      `Email: ${email}`,
+      `Teléfono: ${phone}`,
+      `Área de interés: ${area}`,
+      `Mensaje: ${message}`,
+    ].join("\n");
+
+    window.open(
+      `https://wa.me/5493436235736?text=${encodeURIComponent(text)}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
     setSent(true);
   }
 
@@ -40,9 +62,9 @@ export default function Contact() {
           {sent ? (
             <div className="border border-line rounded-2xl p-10 md:p-14 text-center h-full flex flex-col items-center justify-center">
               <div className="w-14 h-14 rounded-full bg-ink text-paper flex items-center justify-center text-xl mb-5">✓</div>
-              <h3 className="font-display text-2xl font-semibold">Consulta enviada</h3>
+              <h3 className="font-display text-2xl font-semibold">¡Ya casi!</h3>
               <p className="mt-3 text-mute max-w-xs">
-                Gracias por escribirnos. Te vamos a responder dentro de las próximas 48hs hábiles.
+                Abrimos WhatsApp con tu consulta redactada. Solo confirmá el envío desde ahí para que te respondamos.
               </p>
             </div>
           ) : (
@@ -90,11 +112,11 @@ export default function Contact() {
               </label>
 
               <button type="submit" className="btn-ink justify-center mt-1">
-                Enviar consulta
+                Enviar por WhatsApp
                 <span aria-hidden>→</span>
               </button>
               <p className="text-[0.72rem] text-mute-2 text-center -mt-1">
-                Respuesta garantizada dentro de las 48hs hábiles.
+                Te vamos a redirigir a WhatsApp con la consulta ya redactada.
               </p>
             </form>
           )}
