@@ -27,8 +27,16 @@ export default function Team() {
               data-reveal
               className="group border border-line p-8 rounded-2xl hover:border-ink transition-colors duration-400 bg-paper"
             >
-              <div className="w-12 h-12 rounded-full bg-ink text-paper flex items-center justify-center text-[0.72rem] font-semibold tracking-wide">
-                {member.initials}
+              <div className="w-20 h-20 rounded-full overflow-hidden bg-ink text-paper flex items-center justify-center text-[0.72rem] font-semibold tracking-wide">
+                {member.photo ? (
+                  <img
+                    src={member.photo}
+                    alt={member.name}
+                    className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-[filter] duration-500"
+                  />
+                ) : (
+                  member.initials
+                )}
               </div>
               <h3 className="mt-5 font-display text-lg font-semibold">{member.name}</h3>
               <div className="text-xs text-mute-2 mt-0.5">{member.role}</div>

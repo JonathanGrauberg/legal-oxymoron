@@ -71,6 +71,7 @@ export const practiceAreas = [
 export const team = [
   {
     initials: "SV",
+    photo: "/santiago.jpeg",
     name: "Santiago Miguel Villa",
     role: "Socio Fundador",
     description:
@@ -80,6 +81,7 @@ export const team = [
   },
   {
     initials: "PL",
+    photo: "/pablo.jpeg",
     name: "Pablo Tomás Lamas",
     role: "Cofundador",
     description:
