@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="container-px relative">
         <div data-reveal className="eyebrow mb-7 flex items-center gap-3">
           <span className="w-8 h-px bg-ink/40" />
-          Derecho Internacional e Intangibles · Buenos Aires
+          Derecho Internacional e Intangibles · Argentina
         </div>
 
         <h1

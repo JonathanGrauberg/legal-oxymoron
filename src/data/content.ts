@@ -75,7 +75,7 @@ export const team = [
     initials: "SV",
     photo: "/santiago.jpeg",
     name: "Santiago Miguel Villa",
-    role: "Socio Fundador",
+    role: "Fundador",
     description:
       "Doctorando en Ciencias Jurídicas y Sociales (UCA), con posgrados en propiedad intelectual y valuación de intangibles en Franklin Pierce Law School / UNH y UC Davis (EE. UU.). Profesor de Derecho Internacional Privado y Derecho Industrial en la UCA, donde coordina el Posgrado de Gestión de Intangibles.",
     tags: ["Propiedad Intelectual", "Intangibles", "Internacional"],
@@ -85,7 +85,7 @@ export const team = [
     initials: "PL",
     photo: "/pablo.jpeg",
     name: "Pablo Tomás Lamas",
-    role: "Cofundador",
+    role: "Fundador",
     description:
       "Abogado (UCA, 2003) y Magíster en Propiedad Intelectual (Universidad Austral, 2012), con diploma de honor. Diez años de trayectoria en la industria farmacéutica y docencia universitaria en Argentina, Colombia, Ecuador, Perú y Bolivia. Autor del libro \"El Hilo de Oro\", sobre empresas familiares.",
     tags: ["Propiedad Intelectual", "Farmacéutico", "Empresas Familiares"],
