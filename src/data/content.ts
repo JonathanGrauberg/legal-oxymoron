@@ -1,9 +1,11 @@
 export const stats = [
   { value: "25+", label: "Años de trayectoria" },
   { value: "500+", label: "Casos resueltos" },
-  { value: "2", label: "Profesionales" },
+  { value: "3", label: "Países" },
   { value: "10", label: "Áreas de práctica" },
 ];
+
+export const countries = ["Argentina", "Colombia", "España"];
 
 export const practiceAreas = [
   {
@@ -119,8 +121,8 @@ export const methodology = [
 ];
 
 export const contactInfo = {
-  address: "25 de Junio 229, Buenos Aires, Argentina",
-  phone: "+54 11 5237 7192",
+  address: "Argentina",
+  phone: "+54 9 3436235736",
   email: "info@oxymoron.com.ar",
   hours: "Lunes a viernes, 9:00 – 17:00hs. Entrevistas virtuales disponibles.",
   instagram: "@oxymoron_ar",

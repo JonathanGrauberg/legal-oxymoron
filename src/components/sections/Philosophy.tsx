@@ -30,21 +30,21 @@ export default function Philosophy() {
 
           <div data-reveal className="mt-9 space-y-5 max-w-lg text-paper/65 leading-relaxed text-[0.97rem]">
             <p>
-              En la mayoría de las empresas, el derecho aparece tarde: cuando
-              el problema ya explotó, cuando el contrato ya fue firmado, cuando
-              el empleado ya reclamó, cuando el error ya fue.
+              En la mayoría de las empresas, el abogado aparece cuando el
+              problema ya explotó, cuando el contrato ya fue firmado o cuando
+              el empleado ya reclamó.
             </p>
             <p>
-              En Oxymoron pensamos distinto. Diseñamos asesoramiento legal
-              preventivo desde donde identificar riesgos tempranamente,
-              ordenar procesos y ofrecer soluciones antes de que los
-              conflictos se conviertan en costos, juicios o crisis de
-              gestión.
+              En Oxymoron creemos en que los problemas pueden prevenirse. Por
+              ello es que trabajamos a partir del asesoramiento legal
+              preventivo donde identificamos los riesgos tempranamente,
+              ordenamos procesos para disminuir y prevenir daños y ofrecemos
+              soluciones realistas, ajustadas a nuestros clientes.
             </p>
             <p>
-              No se trata solamente de tener un abogado disponible. Se trata
-              de contar con una mirada estratégica, cercana y permanente,
-              integrada a la toma de decisiones del negocio.
+              En Oxymoron creemos que más que un abogado disponible es
+              fundamental contar con una mirada estratégica, cercana y
+              permanente, integrada a la toma de decisiones del negocio.
             </p>
           </div>
 

@@ -39,7 +39,8 @@ export default function Team() {
                 )}
               </div>
               <h3 className="mt-5 font-display text-lg font-semibold">{member.name}</h3>
-              <div className="text-xs text-mute-2 mt-0.5">{member.role}</div>
+              <div className="text-[0.87rem] font-semibold text-ink/75 mt-1">Líder de equipo</div>
+              <div className="text-[0.7rem] text-mute-2 mt-0.5">{member.role}</div>
               {member.description && (
                 <p className="mt-4 text-[0.85rem] leading-relaxed text-mute">{member.description}</p>
               )}
