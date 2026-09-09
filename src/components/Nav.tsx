@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
+import ShareQR from "./ShareQR";
 
 const links = [
   { href: "#servicios", label: "Servicios" },
@@ -42,9 +43,12 @@ export default function Nav() {
           ))}
         </nav>
 
-        <a href="#contacto" className="hidden md:inline-flex btn-ink !py-2.5 !px-5 !text-[0.8rem]">
-          Agendar consulta
-        </a>
+        <div className="hidden md:flex items-center gap-6">
+          <ShareQR />
+          <a href="#contacto" className="btn-ink !py-2.5 !px-5 !text-[0.8rem]">
+            Agendar consulta
+          </a>
+        </div>
 
         <button
           aria-label="Abrir menú"

@@ -126,7 +126,7 @@ export const contactInfo = {
   email: "info@oxymoron.com.ar",
   hours: "Lunes a viernes, 9:00 – 17:00hs. Entrevistas virtuales disponibles.",
   instagram: "@oxymoron_ar",
-  site: "oxymoron.com.ar",
+  site: "legal.oxymoron.com.ar",
 };
 
 export const interestAreas = practiceAreas.map((a) => a.title);
