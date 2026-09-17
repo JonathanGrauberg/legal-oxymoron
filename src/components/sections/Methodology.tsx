@@ -11,7 +11,7 @@ export default function Methodology() {
 
   return (
     <section className="relative py-28 md:py-36 bg-paper-2/60 overflow-hidden">
-      <div className="pointer-events-none absolute -right-10 -top-10 w-[220px] h-[220px] opacity-[0.06]">
+      <div className="pointer-events-none absolute right-[40%] -top-40 w-[320px] h-[320px] opacity-[0.06]">
         <img ref={gearRef} src="/isotipo-negro.png" alt="" className="w-full h-full object-contain" />
       </div>
 
