@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Logo from "./Logo";
 import ShareQR from "./ShareQR";
 
 const links = [
@@ -28,7 +27,7 @@ export default function Nav() {
     >
       <div className="container-px flex items-center justify-between h-[74px]">
         <a href="#top" className="flex items-center">
-          <Logo size={17} withTagline={false} />
+          <img src="/imagotipo-negro.png" alt="Oxymoron" className="h-6 w-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-9">

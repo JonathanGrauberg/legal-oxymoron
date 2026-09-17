@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import { practiceAreas } from "../../data/content";
 import { useReveal } from "../../hooks/useReveal";
-import Gear from "../Gear";
 
 export default function Practice() {
   const ref = useRef<HTMLDivElement>(null);
@@ -27,11 +26,18 @@ export default function Practice() {
                   <span className="text-xs text-mute-2 num-tabular group-hover:text-paper/50 transition-colors">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <Gear
-                    size={26}
-                    color="currentColor"
-                    className="text-ink/25 group-hover:text-paper/40 transition-all duration-500 group-hover:rotate-45"
-                  />
+                  <div className="relative w-[26px] h-[26px] shrink-0">
+                    <img
+                      src="/isotipo-negro.png"
+                      alt=""
+                      className="absolute inset-0 w-full h-full object-contain opacity-25 group-hover:opacity-0 transition-opacity duration-500"
+                    />
+                    <img
+                      src="/isotipo-blanco.png"
+                      alt=""
+                      className="absolute inset-0 w-full h-full object-contain opacity-0 group-hover:opacity-40 transition-opacity duration-500"
+                    />
+                  </div>
                 </div>
                 <h3 className="text-lg font-semibold leading-snug group-hover:text-paper transition-colors duration-500">
                   {area.title}
@@ -56,7 +62,7 @@ export default function Practice() {
               data-reveal
               className="sm:col-span-2 lg:col-span-2 bg-ink text-paper p-8 md:p-9 flex flex-col justify-center gap-4"
             >
-              <Gear size={30} color="var(--color-paper)" className="opacity-70" />
+              <img src="/isotipo-blanco.png" alt="" className="w-[30px] h-[30px] object-contain opacity-70" />
               <h3 className="text-lg font-semibold leading-snug">
                 ¿Tu situación no entra en una sola categoría?
               </h3>

@@ -15,7 +15,7 @@ interface Options {
  * scrolled, plus a subtle constant idle spin so the mechanism never looks
  * fully static. This is what makes "el engranaje se mueva con el scroll".
  */
-export function useGearScroll(ref: RefObject<SVGSVGElement | null>, options: Options = {}) {
+export function useGearScroll(ref: RefObject<HTMLElement | SVGSVGElement | null>, options: Options = {}) {
   const { degreesPerPage = 360, direction = 1, idleSpeed = 0 } = options;
 
   useEffect(() => {

@@ -1,19 +1,18 @@
 import { useRef } from "react";
 import { methodology } from "../../data/content";
 import { useReveal } from "../../hooks/useReveal";
-import Gear from "../Gear";
 import { useGearScroll } from "../../hooks/useGearScroll";
 
 export default function Methodology() {
   const ref = useRef<HTMLDivElement>(null);
-  const gearRef = useRef<SVGSVGElement>(null);
+  const gearRef = useRef<HTMLImageElement>(null);
   useReveal(ref, "[data-reveal]", { y: 20, stagger: 0.07 });
   useGearScroll(gearRef, { degreesPerPage: 200 });
 
   return (
     <section className="relative py-28 md:py-36 bg-paper-2/60 overflow-hidden">
       <div className="pointer-events-none absolute -right-10 -top-10 w-[220px] h-[220px] opacity-[0.06]">
-        <Gear ref={gearRef} color="var(--color-ink)" className="w-full h-full" />
+        <img ref={gearRef} src="/isotipo-negro.png" alt="" className="w-full h-full object-contain" />
       </div>
 
       <div className="container-px">

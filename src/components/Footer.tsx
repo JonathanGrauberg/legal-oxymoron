@@ -1,4 +1,3 @@
-import Logo from "./Logo";
 import { contactInfo, practiceAreas } from "../data/content";
 
 export default function Footer() {
@@ -7,7 +6,12 @@ export default function Footer() {
     <footer className="bg-ink text-paper pt-20 pb-8">
       <div className="container-px grid sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr] gap-12">
         <div>
-          <Logo size={17} color="var(--color-paper)" />
+          <div className="flex items-center gap-2.5">
+            <img src="/imagotipo-blanco.png" alt="Oxymoron" className="h-6 w-auto" />
+            <span className="hidden sm:inline-block eyebrow" style={{ color: "var(--color-paper)", opacity: 0.6, letterSpacing: "0.35em" }}>
+              FEEL·SMART
+            </span>
+          </div>
           <p className="mt-5 text-sm text-paper/50 max-w-xs leading-relaxed">
             Estudio boutique de derecho internacional e intangibles.
             Asesoramiento legal preventivo para empresas con operaciones en
